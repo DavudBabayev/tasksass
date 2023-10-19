@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  background-color: rgb(52, 52, 134);
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: fixed;
+}
+nav .ndiv1 {
+  width: 25%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+nav .ndiv2 {
+  width: 50%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav a :hover {
+  color: orange;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+nav .ndiv3 {
+  width: 50px;
+  height: 50px;
+  display: none;
+}
+nav .ndiv3 i {
+  font-size: 40px;
+}
+
+header {
+  width: 100%;
+  background-color: rgb(52, 52, 134);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .hdiv {
+  width: 75%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header .hdiv button {
+  width: 100px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: rgb(52, 52, 134);
+  border: 2px solid orange;
+}
+header .hdiv button a {
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  nav .ndiv2 {
+    display: none;
+  }
+  nav .ndiv3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
