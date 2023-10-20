@@ -15,37 +15,106 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            border: 2px solid orange;
+            border: 2px solid $color1;
             padding: 10px;
 
             a {
                 text-decoration: none;
                 color: $bcolor1;
-            }
-            i{
-                font-size: 30px;
-                color: orange;
-            }
-        }
-        .con12{
-            width: 80%;
-            display: flex;
-            flex-wrap: wrap;
-            .cgrid1{
-                width: 40%;
-                position: relative;
-                img{
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
+
+                &:hover {
+                    color: $color1;
                 }
             }
-            .cgrid2{
-                width: 40%;
+
+            i {
+                font-size: 30px;
+                color: $color1;
+            }
+        }
+    }
+
+    .con12 {
+        margin-top: 30px;
+        width: 90%;
+        display: flex;
+        justify-content: space-around;
+
+        .cgrid1 {
+            width: 45%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .cgrid2 {
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 45%;
+
+            h3 {
+                font-size: 26px;
+                font-weight: 500;
+            }
+
+            ul {
+                list-style: none;
                 display: flex;
                 flex-direction: column;
-                h2{
-                    font-size: 1px;
+                gap: 10px;
+
+                i {
+                    color: $color1;
+                    font-size: 14px;
+                }
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) and (min-width:320px) {
+    .con1 {
+        .con11 {
+            width: 90%;
+
+            div {
+                width: 90%;
+                justify-content: center;
+
+                a {
+                    display: none;
+                }
+
+                i {
+                    font-size: 40px;
+                }
+            }
+        }
+
+        .con12 {
+            width: 90%;
+            display: grid;
+            grid-template-columns: auto;
+
+            .cgrid1 {
+                width: 100%;
+                grid-row: 1/2;
+            }
+
+            .cgrid2 {
+                width: 100%;
+                grid-row: 2/3;
+
+                h3 {
+                    font-size: 20px;
                     font-weight: 400;
                 }
             }

@@ -26,6 +26,12 @@ nav {
     a {
         text-decoration: none;
         color: white;
+        &:hover{
+            color: $color1;
+        }
+        &:active{
+            color: $color1;
+        }
     }
 
     ul {
