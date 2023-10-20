@@ -1,0 +1,43 @@
+header {
+    width: 100%;
+    background-color: $bcolor1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .hdiv {
+        width: 45%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        gap: 30px;
+        color: white;
+
+        button {
+            width: 200px;
+            height: 60px;
+            font-size: 18px;
+            border-radius: 50px;
+            background-color: $bcolor1;
+            border: 2px solid orange;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) and (min-width:320px) {
+    header{
+        width: 100%;
+        height: 500px;
+        .hdiv{
+            width: 90%;
+        }
+    }
+}

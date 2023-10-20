@@ -2,15 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 nav {
   width: 100%;
-  background-color: rgb(52, 52, 134);
+  background-color: #444444;
   display: flex;
   justify-content: space-around;
   color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   position: fixed;
 }
 nav .ndiv1 {
@@ -30,15 +30,11 @@ nav .ndiv2 {
 nav a {
   text-decoration: none;
   color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-nav a :hover {
-  color: orange;
 }
 nav ul {
   list-style: none;
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 nav .ndiv3 {
   width: 50px;
@@ -47,38 +43,6 @@ nav .ndiv3 {
 }
 nav .ndiv3 i {
   font-size: 40px;
-}
-
-header {
-  width: 100%;
-  background-color: rgb(52, 52, 134);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .hdiv {
-  width: 75%;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  gap: 30px;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-header .hdiv button {
-  width: 100px;
-  height: 30px;
-  border-radius: 50px;
-  background-color: rgb(52, 52, 134);
-  border: 2px solid orange;
-}
-header .hdiv button a {
-  text-decoration: none;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media screen and (max-width: 767px) and (min-width: 320px) {
@@ -90,4 +54,181 @@ header .hdiv button a {
     align-items: center;
     justify-content: center;
   }
+}
+header {
+  width: 100%;
+  background-color: #444444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .hdiv {
+  width: 45%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 30px;
+  color: white;
+}
+header .hdiv button {
+  width: 200px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 50px;
+  background-color: #444444;
+  border: 2px solid orange;
+}
+header .hdiv button a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  header {
+    width: 100%;
+    height: 500px;
+  }
+  header .hdiv {
+    width: 90%;
+  }
+}
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+section .sdiv1 {
+  width: 80%;
+  height: 200px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+section .sdiv1 h2 {
+  color: #aaaaaa;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+section .sdiv1 h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: orange;
+  margin: 4px 10px;
+  box-sizing: border-box;
+}
+section .sdiv1 p {
+  font-size: 36px;
+  font-weight: 700;
+  color: #2a2c39;
+}
+section .sdiv2 {
+  width: 80%;
+  display: flex;
+  gap: 10px;
+}
+section .sdiv2 div {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+section .sdiv2 div ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+section .sdiv2 div ul i {
+  color: orange;
+  font-size: 20px;
+}
+section .sdiv2 div button {
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 2px solid orange;
+}
+section .sdiv2 div button a {
+  text-decoration: none;
+  color: orange;
+}
+
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  section {
+    width: 100%;
+    height: 800px;
+  }
+  section .sdiv2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section .sdiv2 div {
+    width: 80%;
+    height: 250px;
+    font-size: 14px;
+  }
+}
+.con1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.con1 .con11 {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+}
+.con1 .con11 div {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid orange;
+  padding: 10px;
+}
+.con1 .con11 div a {
+  text-decoration: none;
+  color: #444444;
+}
+.con1 .con11 div i {
+  font-size: 30px;
+  color: orange;
+}
+.con1 .con11 .con12 {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.con1 .con11 .con12 .cgrid1 {
+  width: 40%;
+  position: relative;
+}
+.con1 .con11 .con12 .cgrid1 img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.con1 .con11 .con12 .cgrid2 {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+.con1 .con11 .con12 .cgrid2 h2 {
+  font-size: 1px;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
